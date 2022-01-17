@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="15dp"
+        android:lineHeight="40dp"
+        android:gravity="center"
+        android:text="Morse Light is a simple text-to-Morse educational translator app and can also be used for SOS-emergency situations. Find out more about me: "
+        />
+    <ImageView
+        android:id="@+id/website"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/website"
+        android:layout_below="@+id/text"
+        android:layout_toLeftOf="@id/insta"
+        android:layout_marginTop="30dp"
+        android:onClick="goLink"
+       />
+    <ImageView
+        android:id="@+id/insta"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/insta"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        android:onClick="goLink"/>
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/facebook"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/insta"
+        android:layout_below="@id/text"
+        android:onClick="goLink"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Icons Designed by Freepik and Roundicons"
+        android:layout_below="@id/insta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
